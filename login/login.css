@@ -1,0 +1,194 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:white;
+    color:black;
+    display:flex; 
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+h1{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+h2{
+    font-size:17px;
+    font-weight:normal;
+    color:#77797c;
+    margin-bottom:25px;
+}
+
+.login{
+    width:420px;
+    background:#e7e9ed;
+    padding:30px;
+    border-radius:12px;
+    border:1px solid #334155;
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Labels */
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-size:15px;
+}
+
+/* Inputs */
+
+input[type="email"],
+input[type="password"]{
+
+    width:100%;
+    padding:12px;
+    border:1px solid #475569;
+    border-radius:8px;
+    background:#f2f3f7;
+    color:black;
+    font-size:15px;
+    margin-bottom:15px;
+
+}
+
+input:focus{
+
+    outline:none;
+    border-color:#2563eb;
+
+}
+
+/* Remember Me */
+
+.reminder{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+    font-size:14px;
+
+}
+
+.remember{
+
+    display:flex;
+    align-items:center;
+    gap:6px;
+
+}
+
+.reminder a{
+
+    color:#0e459e;
+    text-decoration:none;
+
+}
+
+.reminder a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* Login Button */
+
+.login-button{
+
+    display:flex;
+    justify-content:center;
+
+}
+
+.l-btn{
+
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#182b54;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.l-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* OR */
+
+.or{
+
+    text-align:center;
+    margin:25px 0 15px;
+    color:#444141;
+
+}
+
+/* Social Buttons */
+
+.link-button{
+
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+
+}
+
+.link-button a{
+ flex:1;
+    text-align:center;
+    text-decoration:none;   /* Removes underline */
+    background:#f5f1f1;
+    color:#323232;
+    padding:12px;
+    border-radius:12px;
+    border:none;            /* Removes border if any */
+    outline:none;           /* Removes focus outline */
+    display:block;          /* Makes the whole area clickable */
+    transition:0.3s;
+}
+
+.link-button a:hover{
+
+    background:#060632;
+
+}
+
+/* Register */
+
+.register{
+
+    margin-top:25px;
+    text-align:center;
+    color:#5a5b5d;
+
+}
+
+.register a{
+
+    color:#3b82f6;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+.register a:hover{
+
+    text-decoration:underline;
+
+}
