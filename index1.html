@@ -1,0 +1,3390 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghumau Nepal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<style>
+  /* ===============================
+   GOOGLE FONT
+==================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* ===============================
+   RESET
+==================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#F8FAFC;
+
+    color:#1E293B;
+
+    line-height:1.7;
+
+}
+
+img{
+
+    width:100%;
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+section{
+
+    padding:90px 9%;
+
+}
+
+
+/* ===============================
+   NAVBAR
+==================================*/
+
+header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 9%;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    z-index:1000;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.logo i{
+
+    color:#0F766E;
+
+    font-size:30px;
+
+}
+
+.logo h2{
+
+    font-size:28px;
+
+    color:#0F172A;
+
+    font-weight:700;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+nav ul li a{
+
+    color:#334155;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+    color:#0F766E;
+
+}
+
+.active{
+
+    color:#0F766E !important;
+
+}
+
+
+/* ===============================
+   HERO SECTION
+==================================*/
+
+.hero{
+
+    margin-top:90px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    gap:60px;
+
+}
+
+.hero-content h1{
+
+    font-size:56px;
+
+    line-height:1.2;
+
+    color:#0F172A;
+
+    margin-bottom:25px;
+
+}
+
+.hero-content p{
+
+    font-size:18px;
+
+    color:#64748B;
+
+    margin-bottom:35px;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    background:#0F766E;
+
+    color:white;
+
+    padding:16px 40px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.btn:hover{
+
+    background:#115E59;
+
+    transform:translateY(-3px);
+
+}
+
+.hero-image img{
+
+    border-radius:20px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+
+/* ===============================
+   SEARCH SECTION
+==================================*/
+
+.search-section{
+
+    background:white;
+
+    margin-top:40px;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:20px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    padding:35px;
+
+}
+
+.search-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    border:1px solid #CBD5E1;
+
+    padding:15px 20px;
+
+    border-radius:12px;
+
+}
+
+.search-box i{
+
+    color:#0F766E;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    font-size:16px;
+
+}
+
+.search-section select{
+
+    border:1px solid #CBD5E1;
+
+    border-radius:12px;
+
+    padding:15px;
+
+    outline:none;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+    background:white;
+
+}
+
+
+/* ===============================
+   SECTION TITLE
+==================================*/
+
+.section-title,
+.destination-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-title h2,
+.destination-title h2{
+
+    font-size:42px;
+
+    color:#0F172A;
+
+    margin-bottom:15px;
+
+}
+
+.section-title p,
+.destination-title p{
+
+    color:#64748B;
+
+    font-size:18px;
+
+}
+/*====================================
+    DESTINATION SECTION
+=====================================*/
+
+.destination-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+}
+
+
+.destination-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:all .35s ease;
+
+    cursor:pointer;
+
+}
+
+
+.destination-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+
+.destination-card img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+
+.destination-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+
+.card-content{
+
+    padding:25px;
+
+}
+
+
+.card-content h3{
+
+    font-size:25px;
+
+    margin:18px 0 12px;
+
+    color:#0F172A;
+
+}
+
+
+.card-content p{
+
+    color:#64748B;
+
+    margin-bottom:18px;
+
+    font-size:15px;
+
+}
+
+
+.location{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#0F766E !important;
+
+    font-weight:600;
+
+}
+
+
+.location i{
+
+    color:#0F766E;
+
+}
+
+
+.card-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:20px;
+
+    margin-bottom:20px;
+
+    padding-top:18px;
+
+    border-top:1px solid #E2E8F0;
+
+}
+
+
+.card-footer span{
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+
+.details-btn{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#0F766E;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.details-btn:hover{
+
+    background:#115E59;
+
+}
+
+
+/*====================================
+        CATEGORY BADGES
+=====================================*/
+
+.category{
+
+    display:inline-block;
+
+    padding:7px 18px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:.5px;
+
+}
+
+
+.religious{
+
+    background:#FFF7ED;
+
+    color:#C2410C;
+
+}
+
+
+.nature{
+
+    background:#ECFDF5;
+
+    color:#047857;
+
+}
+
+
+.adventure{
+
+    background:#EFF6FF;
+
+    color:#1D4ED8;
+
+}
+
+
+.heritage{
+
+    background:#F5F3FF;
+
+    color:#7C3AED;
+
+}
+
+
+/*====================================
+      CARD ANIMATION
+=====================================*/
+
+.destination-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/*====================================
+      RESPONSIVE
+=====================================*/
+
+@media(max-width:992px){
+
+.destination-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.destination-container{
+
+grid-template-columns:1fr;
+
+}
+
+.card-content h3{
+
+font-size:22px;
+
+}
+
+}
+/*====================================
+        VEHICLE BOOKING SECTION
+=====================================*/
+
+.vehicle-section{
+
+    background:#F1F5F9;
+
+}
+
+.vehicle-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+
+    gap:35px;
+
+}
+
+.vehicle-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.vehicle-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.vehicle-card img{
+
+    width:100%;
+
+    height:230px;
+
+    object-fit:cover;
+
+    transition:.4s;
+
+}
+
+.vehicle-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.vehicle-content{
+
+    padding:25px;
+
+}
+
+.vehicle-content h3{
+
+    font-size:26px;
+
+    color:#0F172A;
+
+    margin-bottom:10px;
+
+}
+
+.vehicle-content p{
+
+    color:#64748B;
+
+    margin-bottom:15px;
+
+}
+
+.vehicle-content h4{
+
+    color:#0F766E;
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+    font-weight:700;
+
+}
+
+.vehicle-content ul{
+
+    margin-bottom:25px;
+
+}
+
+.vehicle-content ul li{
+
+    padding:10px 0;
+
+    color:#475569;
+
+    border-bottom:1px solid #E2E8F0;
+
+}
+
+.vehicle-content ul li:last-child{
+
+    border:none;
+
+}
+
+.book-btn{
+
+    width:100%;
+
+    border:none;
+
+    padding:15px;
+
+    background:#0F766E;
+
+    color:white;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.book-btn:hover{
+
+    background:#115E59;
+
+    transform:translateY(-2px);
+
+}
+
+
+
+/*====================================
+            WHY CHOOSE US
+=====================================*/
+
+.why-us{
+
+    background:white;
+
+}
+
+.features{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.feature-box{
+
+    background:#fff;
+
+    text-align:center;
+
+    padding:40px 30px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.feature-box:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+
+.feature-box i{
+
+    font-size:50px;
+
+    color:#0F766E;
+
+    margin-bottom:20px;
+
+}
+
+.feature-box h3{
+
+    color:#0F172A;
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+}
+
+.feature-box p{
+
+    color:#64748B;
+
+    font-size:15px;
+
+}
+
+
+
+/*====================================
+            RESPONSIVE
+=====================================*/
+
+@media(max-width:992px){
+
+.vehicle-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.features{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.vehicle-container{
+
+grid-template-columns:1fr;
+
+}
+
+.features{
+
+grid-template-columns:1fr;
+
+}
+
+.vehicle-content h3{
+
+font-size:22px;
+
+}
+
+.vehicle-content h4{
+
+font-size:20px;
+
+}
+
+}
+/*====================================
+        SMART TRIP PLANNER
+=====================================*/
+
+.trip-planner{
+
+    background:#FFFFFF;
+
+}
+
+.planner-heading{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.planner-heading h2{
+
+    font-size:42px;
+
+    color:#0F172A;
+
+    margin-bottom:15px;
+
+}
+
+.planner-heading p{
+
+    color:#64748B;
+
+    font-size:18px;
+
+}
+
+.planner-container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+
+    align-items:start;
+
+}
+
+
+/*==============================
+        PLANNER FORM
+===============================*/
+
+.planner-form{
+
+    background:#FFFFFF;
+
+    padding:40px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.planner-form h3{
+
+    font-size:30px;
+
+    margin-bottom:30px;
+
+    color:#0F172A;
+
+}
+
+.input-group{
+
+    margin-bottom:22px;
+
+}
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+.input-group input,
+
+.input-group select{
+
+    width:100%;
+
+    padding:16px;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:16px;
+
+    transition:.3s;
+
+    background:white;
+
+}
+
+.input-group input:focus,
+
+.input-group select:focus{
+
+    border-color:#0F766E;
+
+    box-shadow:0 0 0 4px rgba(15,118,110,.15);
+
+}
+
+.planner-btn{
+
+    width:100%;
+
+    padding:16px;
+
+    background:#0F766E;
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.planner-btn:hover{
+
+    background:#115E59;
+
+    transform:translateY(-2px);
+
+}
+
+
+/*==============================
+        RESULT PANEL
+===============================*/
+
+.planner-result{
+
+    background:#FFFFFF;
+
+    padding:40px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.planner-result h3{
+
+    font-size:30px;
+
+    margin-bottom:30px;
+
+    color:#0F172A;
+
+}
+
+#tripResult{
+
+    display:grid;
+
+    gap:20px;
+
+}
+
+.result-card{
+
+    background:#F8FAFC;
+
+    border-left:5px solid #0F766E;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.result-card:hover{
+
+    transform:translateX(8px);
+
+    background:#ECFDF5;
+
+}
+
+.result-card h4{
+
+    color:#0F172A;
+
+    margin-bottom:10px;
+
+    font-size:20px;
+
+}
+
+.result-card p{
+
+    color:#64748B;
+
+    font-size:15px;
+
+}
+
+.result-card h2{
+
+    color:#0F766E;
+
+    font-size:32px;
+
+    margin-top:10px;
+
+}
+
+
+/*==============================
+        RESPONSIVE
+===============================*/
+
+@media(max-width:992px){
+
+.planner-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.planner-form,
+
+.planner-result{
+
+padding:25px;
+
+}
+
+.planner-heading h2{
+
+font-size:34px;
+
+}
+
+.planner-form h3,
+
+.planner-result h3{
+
+font-size:24px;
+
+}
+}
+/*====================================
+        HOTEL BOOKING SECTION
+=====================================*/
+
+.hotel-section{
+
+    background:#F8FAFC;
+
+}
+
+.hotel-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+
+    gap:35px;
+
+}
+
+.hotel-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:all .35s ease;
+
+}
+
+.hotel-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+.hotel-card img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.hotel-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.hotel-content{
+
+    padding:25px;
+
+}
+
+.hotel-type{
+
+    display:inline-block;
+
+    background:#ECFDF5;
+
+    color:#047857;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+.hotel-content h3{
+
+    font-size:27px;
+
+    color:#0F172A;
+
+    margin-bottom:12px;
+
+}
+
+.hotel-content p{
+
+    color:#64748B;
+
+    margin-bottom:15px;
+
+    font-size:15px;
+
+}
+
+.hotel-content p i{
+
+    color:#0F766E;
+
+    margin-right:8px;
+
+}
+
+.hotel-info{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin:20px 0;
+
+    padding:18px 0;
+
+    border-top:1px solid #E2E8F0;
+
+    border-bottom:1px solid #E2E8F0;
+
+}
+
+.hotel-info span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#475569;
+
+    font-size:14px;
+
+}
+
+.hotel-info i{
+
+    color:#0F766E;
+
+}
+
+.hotel-content h4{
+
+    font-size:28px;
+
+    color:#0F766E;
+
+    margin:20px 0;
+
+}
+
+.hotel-btn{
+
+    width:100%;
+
+    padding:16px;
+
+    background:#0F766E;
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.hotel-btn:hover{
+
+    background:#115E59;
+
+    transform:translateY(-3px);
+
+}
+
+
+
+/*====================================
+        FOOTER
+=====================================*/
+
+/* ================= FOOTER ================= */
+
+.footer{
+    width:100%;
+    background:#0F172A;
+    color:#CBD5E1;
+    padding:80px 0 30px;
+}
+
+.footer-container{
+
+    width:90%;
+    max-width:1400px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:40px;
+
+}
+
+.footer-box h2{
+
+    color:#fff;
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+}
+
+.footer-box h3{
+
+    color:#fff;
+
+    font-size:22px;
+
+    margin-bottom:20px;
+
+}
+
+.footer-box p{
+
+    color:#94A3B8;
+
+    line-height:1.8;
+
+    margin-bottom:15px;
+
+}
+
+.footer-box ul{
+
+    list-style:none;
+
+}
+
+.footer-box ul li{
+
+    margin-bottom:12px;
+
+}
+
+.footer-box ul li a{
+
+    color:#CBD5E1;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-box ul li a:hover{
+
+    color:#14B8A6;
+
+}
+
+.social-icons{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.social-icons a{
+
+    width:45px;
+
+    height:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#1E293B;
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+.social-icons a:hover{
+
+    background:#14B8A6;
+
+}
+
+.footer hr{
+
+    margin:50px auto 25px;
+
+    width:90%;
+
+    border:none;
+
+    height:1px;
+
+    background:#334155;
+
+}
+
+.footer-bottom{
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.footer-bottom p{
+
+    color:#94A3B8;
+
+}
+
+.footer-bottom a{
+
+    color:#CBD5E1;
+
+    text-decoration:none;
+
+    margin-left:12px;
+
+}
+
+.footer-bottom a:hover{
+
+    color:#14B8A6;
+
+}
+
+
+/*==========================
+    Responsive
+===========================*/
+
+@media(max-width:1100px){
+
+.footer-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.footer-container{
+
+grid-template-columns:1fr;
+
+}
+
+.footer-bottom{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+}
+
+
+
+/*====================================
+        RESPONSIVE
+=====================================*/
+
+@media(max-width:1100px){
+
+.footer-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.hotel-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hotel-container{
+
+grid-template-columns:1fr;
+
+}
+
+.footer-container{
+
+grid-template-columns:1fr;
+
+}
+
+.hotel-info{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:12px;
+
+}
+
+.footer-bottom{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+}
+/*====================================
+        BACK TO TOP BUTTON
+=====================================*/
+
+.back-to-top{
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:30px;
+
+    width:55px;
+
+    height:55px;
+
+    background:#0F766E;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    font-size:22px;
+
+    text-decoration:none;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+
+    transition:.3s;
+
+    z-index:999;
+
+}
+
+.back-to-top:hover{
+
+    background:#115E59;
+
+    transform:translateY(-6px);
+
+}
+
+
+/*====================================
+            BUTTONS
+=====================================*/
+
+button{
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+button:active{
+
+    transform:scale(.96);
+
+}
+
+.btn,
+.details-btn,
+.book-btn,
+.hotel-btn,
+.planner-btn{
+
+    transition:all .35s ease;
+
+}
+
+.btn:hover,
+.details-btn:hover,
+.book-btn:hover,
+.hotel-btn:hover,
+.planner-btn:hover{
+
+    box-shadow:0 12px 30px rgba(15,118,110,.25);
+
+}
+
+
+/*====================================
+        CUSTOM SCROLLBAR
+=====================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#E2E8F0;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#0F766E;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#115E59;
+
+}
+
+
+/*====================================
+        SELECTION COLOR
+=====================================*/
+
+::selection{
+
+    background:#0F766E;
+
+    color:white;
+
+}
+
+
+/*====================================
+        IMAGE HOVER
+=====================================*/
+
+.destination-card img,
+.vehicle-card img,
+.hotel-card img{
+
+    cursor:pointer;
+
+}
+
+
+/*====================================
+        SMOOTH CARD TRANSITIONS
+=====================================*/
+
+.destination-card,
+.vehicle-card,
+.hotel-card,
+.feature-box,
+.result-card{
+
+    transition:all .35s ease;
+
+}
+
+
+/*====================================
+        LOADING ANIMATION
+=====================================*/
+
+.loading{
+
+    width:60px;
+
+    height:60px;
+
+    border:6px solid #E2E8F0;
+
+    border-top:6px solid #0F766E;
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+    margin:auto;
+
+}
+
+@keyframes spin{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+
+/*====================================
+        FADE IN ANIMATION
+=====================================*/
+
+.fade-up{
+
+    animation:fadeUp .8s ease forwards;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/*====================================
+        RESPONSIVE
+=====================================*/
+
+@media(max-width:576px){
+
+.hero-content h1{
+
+    font-size:34px;
+
+}
+
+.section-title h2,
+.destination-title h2,
+.planner-heading h2{
+
+    font-size:30px;
+
+}
+
+.search-section{
+
+    grid-template-columns:1fr;
+
+    padding:20px;
+
+}
+
+.back-to-top{
+
+    width:48px;
+
+    height:48px;
+
+    font-size:18px;
+
+}
+
+}
+</style>
+<body>
+
+<header>
+
+<div class="logo">
+  <!-- <i class="fa-solid fa-mountain"></i> -->
+<!-- <i class="fa-solid fa-person-hiking"></i> -->
+<!-- <i class="fa-solid fa-mountain"></i> -->
+ <!-- <i class="fa-solid fa-tree"></i> -->
+ <i class="fa-solid fa-mountain-sun"></i>
+
+<h2>घुमौ Nepal</h2>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="#explore" class="active">Explore</a></li>
+
+<li><a href="#vehicles">Vehicles</a></li>
+
+<li><a href="#planner">Trip Planner</a></li>
+
+<li><a href="#hotels">Hotels</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+
+Seven Provinces.<br>
+
+Seventy Seven Districts.<br>
+
+One Amazing Journey.
+
+</h1>
+
+<p>
+
+Browse Nepal's most beautiful religious sites,
+
+trekking routes, historical monuments,
+
+national parks and adventure destinations.
+
+</p>
+
+<a href="#" class="btn">
+
+Explore Destinations
+
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="Nepal.jpg" alt="Nepal">
+
+</div>
+
+</section>
+
+
+<section class="search-section">
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+placeholder="Search Destination">
+
+</div>
+
+
+<select>
+
+<option>All Provinces</option>
+
+<option>Koshi</option>
+
+<option>Madhesh</option>
+
+<option>Bagmati</option>
+
+<option>Gandaki</option>
+
+<option>Lumbini</option>
+
+<option>Karnali</option>
+
+<option>Sudurpashchim</option>
+
+</select>
+
+
+<select>
+
+<option>All Categories</option>
+
+<option>Religious</option>
+
+<option>Nature</option>
+
+<option>Adventure</option>
+
+<option>Heritage</option>
+
+</select>
+<button type="submit">Search</button>
+
+</section>
+
+
+<section class="destination-title">
+
+<h2>Popular Destinations</h2>
+
+<p>
+
+Choose your favourite destination in Nepal.
+
+</p>
+
+</section>
+
+
+<section class="destination-container">
+
+      <!-- Destination Card 1 -->
+
+    <div class="destination-card">
+
+        <img src="pashupatinath temple.jpg" alt="Pashupatinath">
+
+        <div class="card-content">
+
+            <span class="category religious">
+                Religious
+            </span>
+
+            <h3>Pashupatinath Temple</h3>
+
+            <p class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                Kathmandu District
+            </p>
+
+            <p>
+                Nepal's holiest Hindu temple situated on the
+                banks of the sacred Bagmati River.
+            </p>
+
+            <div class="card-footer">
+
+                <span>
+                    ⭐ 4.8
+                </span>
+
+                <span>
+                    1 Day
+                </span>
+
+            </div>
+
+            <button class="details-btn">
+                View Details
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Destination Card 2 -->
+
+    <div class="destination-card">
+
+        <img src="pokhara.jpg" alt="Pokhara">
+
+        <div class="card-content">
+
+            <span class="category nature">
+                Nature
+            </span>
+
+            <h3>Phewa Lake</h3>
+
+            <p class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                Kaski District
+            </p>
+
+            <p>
+                Enjoy boating with spectacular views of
+                the Annapurna mountain range.
+            </p>
+
+            <div class="card-footer">
+
+                <span>
+                    ⭐ 4.9
+                </span>
+
+                <span>
+                    2 Days
+                </span>
+
+            </div>
+
+            <button class="details-btn">
+                View Details
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Destination Card 3 -->
+
+    <div class="destination-card">
+
+        <img src="chitwan1.jpg" alt="Chitwan">
+
+        <div class="card-content">
+
+            <span class="category nature">
+                Nature
+            </span>
+
+            <h3>Chitwan National Park</h3>
+
+            <p class="location">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                Chitwan District
+
+            </p>
+
+            <p>
+
+                Experience jungle safaris, rhinos,
+                crocodiles and Bengal tigers.
+
+            </p>
+
+            <div class="card-footer">
+
+                <span>⭐ 4.7</span>
+
+                <span>2 Days</span>
+
+            </div>
+
+            <button class="details-btn">
+
+                View Details
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Destination Card 4 -->
+
+    <div class="destination-card">
+
+        <img src="Lumbini.jpg" alt="Lumbini">
+
+        <div class="card-content">
+
+            <span class="category religious">
+
+                Religious
+
+            </span>
+
+            <h3>
+
+                Lumbini
+
+            </h3>
+
+            <p class="location">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                Rupandehi District
+
+            </p>
+
+            <p>
+
+                Birthplace of Lord Buddha and one
+                of the world's most important pilgrimage sites.
+
+            </p>
+
+            <div class="card-footer">
+
+                <span>⭐ 4.8</span>
+
+                <span>1 Day</span>
+
+            </div>
+
+            <button class="details-btn">
+
+                View Details
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Destination Card 5 -->
+
+    <div class="destination-card">
+
+        <img src="Everest.jpg" alt="Everest">
+
+        <div class="card-content">
+
+            <span class="category adventure">
+
+                Adventure
+
+            </span>
+
+            <h3>
+
+                Everest Base Camp
+
+            </h3>
+
+            <p class="location">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                Solukhumbu District
+
+            </p>
+
+            <p>
+
+                Trek through the Himalayas to reach
+                the world's highest mountain.
+
+            </p>
+
+            <div class="card-footer">
+
+                <span>⭐ 5.0</span>
+
+                <span>12 Days</span>
+
+            </div>
+
+            <button class="details-btn">
+
+                View Details
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Destination Card 6 -->
+
+    <div class="destination-card">
+
+        <img src="Rara.jpg" alt="Rara Lake">
+
+        <div class="card-content">
+
+            <span class="category nature">
+
+                Nature
+
+            </span>
+
+            <h3>
+
+                Rara Lake
+
+            </h3>
+
+            <p class="location">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                Mugu District
+
+            </p>
+
+            <p>
+
+                Nepal's largest freshwater lake surrounded
+                by pine forests and beautiful mountains.
+
+            </p>
+
+            <div class="card-footer">
+
+                <span>⭐ 4.9</span>
+
+                <span>4 Days</span>
+
+            </div>
+
+            <button class="details-btn">
+
+                View Details
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= VEHICLE BOOKING SECTION ================= -->
+
+<section class="vehicle-section" id="vehicles">//id diye maile
+
+    <div class="section-title">
+
+        <h2>Book Your Transportation</h2>
+
+        <p>
+            Choose the best transportation according to your destination and budget.
+        </p>
+
+    </div>
+
+    <div class="vehicle-container">
+
+        <!-- Vehicle Card 1 -->
+
+        <div class="vehicle-card">
+
+            <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=900&q=80" alt="Tourist Bus">
+
+            <div class="vehicle-content">
+
+                <h3>Tourist Bus</h3>
+
+                <!-- <p>Kathmandu → Pokhara</p>
+
+                <h4>Rs. 1500 / Seat</h4> -->
+
+                <ul>
+                    <li>✔ Air Conditioned</li>
+                    <li>✔ Free WiFi</li>
+                    <li>✔ Comfortable Seats</li>
+                </ul>
+
+                <button class="book-btn">
+                    Book Now
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Vehicle Card 2 -->
+
+        <div class="vehicle-card">
+
+            <img src="scorpio.jpg" alt="Jeep">
+
+            <div class="vehicle-content">
+
+                <h3>Private Jeep</h3>
+
+                <!-- <p>Pokhara → Mustang</p>
+
+                <h4>Rs. 12,000 / Day</h4> -->
+
+                <ul>
+                    <li>✔ 4 Wheel Drive</li>
+                    <li>✔ Mountain Roads</li>
+                    <li>✔ 7 Passenger Capacity</li>
+                </ul>
+
+                <button class="book-btn">
+                    Book Now
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Vehicle Card 3 -->
+
+        <div class="vehicle-card">
+
+            <img src="nepalairline.jpg" alt="Flight">
+
+            <div class="vehicle-content">
+
+                 <h3>Domestic Flight</h3>
+
+               <!-- <p>Kathmandu → Lukla</p> 
+
+                <h4>Rs. 5500 / Seat</h4>-->
+
+                <ul>
+                    <li>✔ Fast Travel</li>
+                    <li>✔ Mountain View</li>
+                    <li>✔ Safe & Reliable</li>
+                </ul>
+
+                <button class="book-btn">
+                    Book Now
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section class="why-us">
+
+    <div class="section-title">
+
+        <h2>Why Choose Ghumau Nepal?</h2>
+
+        <p>
+            Everything you need for your Nepal trip in one place.
+        </p>
+
+    </div>
+
+    <div class="features">
+
+        <div class="feature-box">
+
+            <i class="fa-solid fa-map-location-dot"></i>
+
+            <h3>100+ Destinations</h3>
+
+            <p>
+                Discover Nepal's most beautiful places from every province.
+            </p>
+
+        </div>
+
+        <div class="feature-box">
+
+            <i class="fa-solid fa-hotel"></i>
+
+            <h3>Best Hotels</h3>
+
+            <p>
+                Book hotels, resorts, homestays and guest houses easily.
+            </p>
+
+        </div>
+
+        <div class="feature-box">
+
+            <i class="fa-solid fa-car-side"></i>
+
+            <h3>Transportation</h3>
+
+            <p>
+                Tourist buses, jeeps, flights and taxis at affordable prices.
+            </p>
+
+        </div>
+
+        <div class="feature-box">
+
+            <i class="fa-solid fa-headset"></i>
+
+            <h3>24/7 Support</h3>
+
+            <p>
+                Our travel experts are always available to assist you.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SMART TRIP PLANNER ================= -->
+
+<section class="trip-planner">
+
+    <div class="planner-heading">
+
+        <h2>Smart Trip Planner</h2>
+
+        <p>
+            Plan your trip according to your budget, available days, and interests.
+        </p>
+
+    </div>
+
+    <div class="planner-container">
+
+        <!-- Planner Form -->
+
+        <div class="planner-form">
+
+            <h3>Create Your Trip</h3>
+
+            <form id="tripForm">
+
+                <div class="input-group">
+
+                    <label for="days">Number of Days</label>
+
+                    <input
+                        type="number"
+                        id="days"
+                        placeholder="Enter days"
+                        min="1"
+                        max="30"
+                    >
+
+                </div>
+
+                <div class="input-group">
+
+                    <label for="budget">Budget (NPR)</label>
+
+                    <input
+                        type="number"
+                        id="budget"
+                        placeholder="Enter your budget"
+                    >
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Select Province</label>
+
+                    <select id="province">
+
+                        <option value="">Choose Province</option>
+                        <option>Koshi</option>
+                        <option>Madhesh</option>
+                        <option>Bagmati</option>
+                        <option>Gandaki</option>
+                        <option>Lumbini</option>
+                        <option>Karnali</option>
+                        <option>Sudurpashchim</option>
+
+                    </select>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Travel Interest</label>
+
+                    <select id="interest">
+
+                        <option value="">Choose Interest</option>
+
+                        <option>Nature</option>
+
+                        <option>Adventure</option>
+
+                        <option>Religious</option>
+
+                        <option>Heritage</option>
+
+                    </select>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Accommodation</label>
+
+                    <select id="hotel">
+
+                        <option>Any</option>
+
+                        <option>Hotel</option>
+
+                        <option>Resort</option>
+
+                        <option>Guest House</option>
+
+                        <option>Homestay</option>
+
+                    </select>
+
+                </div>
+
+                <button type="submit" class="planner-btn">
+
+                    Generate My Trip
+
+                </button>
+
+            </form>
+
+        </div>
+
+
+
+        <!-- Planner Result -->
+
+        <div class="planner-result">
+
+            <h3>Your Suggested Itinerary</h3>
+
+            <div id="tripResult">
+
+                <div class="result-card">
+
+                    <h4>Day 1</h4>
+
+                    <p>
+                        Visit Pashupatinath Temple and Boudhanath Stupa.
+                    </p>
+
+                </div>
+
+                <div class="result-card">
+
+                    <h4>Day 2</h4>
+
+                    <p>
+                        Explore Bhaktapur Durbar Square and Patan.
+                    </p>
+
+                </div>
+
+                <div class="result-card">
+
+                    <h4>Day 3</h4>
+
+                    <p>
+                        Travel to Pokhara and enjoy Phewa Lake.
+                    </p>
+
+                </div>
+
+                <div class="result-card">
+
+                    <h4>Estimated Budget</h4>
+
+                    <h2>Rs. 28,500</h2>
+                </div>
+
+                <div class="result-card">
+
+                    <h4>Recommended Hotel</h4>
+
+                    <p>Lakeside Boutique Hotel</p>
+
+                </div>
+
+                <div class="result-card">
+
+                    <h4>Transportation</h4>
+
+                    <p>Tourist Bus + Local Taxi</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= HOTEL BOOKING SECTION ================= -->
+
+<section class="hotel-section">
+
+    <div class="section-title">
+
+        <h2>Recommended Hotels & Accommodation</h2>
+
+        <p>
+            Book hotels, resorts, guest houses and homestays near your destination.
+        </p>
+
+    </div>
+
+    <div class="hotel-container">
+
+        <!-- Hotel 1 -->
+
+        <div class="hotel-card">
+
+            <img src="Hotelcountryvilla.jpg" alt="Hotel">
+
+            <div class="hotel-content">
+
+                <span class="hotel-type">⭐⭐⭐⭐ Hotel</span>
+
+                <h3>Hotel Country Villa</h3>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Bhaktapur
+                </p>
+
+                <p>
+                    Beautiful hotel country villa located near Bhaktapur.
+                    Bhaktapur
+                </p>
+
+                <div class="hotel-info">
+
+                    <span>
+                        <i class="fa-solid fa-bed"></i>
+                        Deluxe Room
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-wifi"></i>
+                        Free WiFi
+                    </span>
+
+                </div>
+
+                <h4>Rs. 4,500 / Night</h4>
+
+                <button class="hotel-btn">
+
+                    Book Hotel
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Hotel 2 -->
+
+        <div class="hotel-card">
+
+            <img src="Rupakotresort.jpg" alt="Resort">
+
+            <div class="hotel-content">
+
+                <span class="hotel-type">⭐⭐⭐⭐⭐ Resort</span>
+
+                <h3>Rupakot Resort</h3>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Pokhara
+                </p>
+
+                <p>
+                    Luxury resort with lake and mountain views.
+                </p>
+
+                <div class="hotel-info">
+
+                    <span>
+                        <i class="fa-solid fa-swimmer"></i>
+                        Swimming Pool
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-utensils"></i>
+                        Restaurant
+                    </span>
+
+                </div>
+
+                <h4>Rs. 6,800 / Night</h4>
+
+                <button class="hotel-btn">
+
+                    Book Resort
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Hotel 3 -->
+
+        <div class="hotel-card">
+
+            <img src="mokshmustang.jpg" alt="Guest House">
+
+            <div class="hotel-content">
+
+                <span class="hotel-type">Guest House</span>
+
+                <h3>Moksh Mustang</h3>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Mustang jomsom
+                </p>
+
+                <p>
+                    Comfortable rooms for trekkers with Himalayan views.
+                </p>
+
+                <div class="hotel-info">
+
+                    <span>
+                        <i class="fa-solid fa-fire"></i>
+                        Hot Water
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-mug-hot"></i>
+                        Breakfast
+                    </span>
+
+                </div>
+
+                <h4>Rs. 2,200 / Night</h4>
+
+                <button class="hotel-btn">
+
+                    Book Room
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Hotel 4 -->
+
+        <div class="hotel-card">
+
+            <img src="RaRahomestay1.jpg" alt="Homestay">
+
+            <div class="hotel-content">
+
+                <span class="hotel-type">Homestay</span>
+
+                <h3>Rara Homestay</h3>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Rara Lake
+                </p>
+
+                <p>
+                    Experience local culture and authentic Nepali hospitality.
+                </p>
+
+                <div class="hotel-info">
+
+                    <span>
+                        <i class="fa-solid fa-house"></i>
+                        Family Stay
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-bowl-food"></i>
+                        Local Food
+                    </span>
+
+                </div>
+
+                <h4>Rs. 1,500 / Night</h4>
+
+                <button class="hotel-btn">
+
+                    Book Homestay
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CUSTOMER REVIEWS SECTION ================= -->
+
+<!-- <section class="reviews-section">
+
+    <div class="section-header">
+
+        <h2>What Our Travelers Say</h2>
+
+        <p>
+            Thousands of travelers have explored Nepal with Ghumau Nepal.
+            Here are some of their experiences.
+        </p>
+
+    </div>
+
+    <div class="reviews-container">
+
+        Review Card 1
+
+        <div class="review-card">
+
+            <div class="review-top">
+
+                <img src="https://randomuser.me/api/portraits/women/44.jpg"
+                     alt="Emily Johnson">
+
+                <div>
+
+                    <h3>Emily Johnson</h3>
+
+                    <span>United Kingdom</span>
+
+                </div>
+
+            </div>
+
+            <div class="stars">
+
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+
+            </div>
+
+            <p>
+
+                "The Everest Base Camp trek was one of the most incredible
+                experiences of my life. Everything from transportation to
+                hotel booking was perfectly organized."
+
+            </p>
+
+            <small>Visited: Everest Base Camp</small>
+
+        </div>
+
+
+
+        
+
+        <div class="review-card">
+
+            <div class="review-top">
+
+                <img src="https://randomuser.me/api/portraits/men/32.jpg"
+                     alt="David Wilson">
+
+                <div>
+
+                    <h3>David Wilson</h3>
+
+                    <span>Australia</span>
+
+                </div>
+
+            </div>
+
+            <div class="stars">
+
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+
+            </div>
+
+            <p>
+
+                "Pokhara was absolutely beautiful. Booking our hotel and
+                transportation through Ghumau Nepal made the journey
+                completely stress free."
+
+            </p>
+
+            <small>Visited: Pokhara</small>
+
+        </div>
+
+
+
+       
+
+        <div class="review-card">
+
+            <div class="review-top">
+
+                <img src="https://randomuser.me/api/portraits/women/65.jpg"
+                     alt="Sophia Martinez">
+
+                <div>
+
+                    <h3>Sophia Martinez</h3>
+
+                    <span>Spain</span>
+
+                </div>
+
+            </div>
+
+            <div class="stars">
+
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+
+            </div>
+
+            <p>
+
+                "I loved visiting Lumbini and Chitwan National Park.
+                The suggested itinerary matched my budget perfectly."
+
+            </p>
+
+            <small>Visited: Lumbini & Chitwan</small>
+
+        </div>
+
+
+
+       
+
+        <div class="review-card">
+
+            <div class="review-top">
+
+                <img src="https://randomuser.me/api/portraits/men/76.jpg"
+                     alt="James Brown">
+
+                <div>
+
+                    <h3>James Brown</h3>
+
+                    <span>Canada</span>
+
+                </div>
+
+            </div>
+
+            <div class="stars">
+
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+
+            </div>
+
+            <p>
+
+                "Mustang and Muktinath were unforgettable.
+                The private jeep service was excellent and the hotel
+                recommendations were outstanding."
+
+            </p>
+
+            <small>Visited: Mustang</small>
+
+        </div>
+
+
+
+       
+
+        <div class="review-card">
+
+            <div class="review-top">
+
+                <img src="https://randomuser.me/api/portraits/women/25.jpg"
+                     alt="Sarah Lee">
+
+                <div>
+
+                    <h3>Sarah Lee</h3>
+
+                    <span>Singapore</span>
+
+                </div>
+
+            </div>
+
+            <div class="stars">
+
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+
+            </div>
+
+            <p>
+
+                "The Smart Trip Planner suggested an amazing itinerary.
+                Everything was within my budget and easy to book."
+
+            </p>
+
+            <small>Visited: Kathmandu & Pokhara</small>
+
+        </div>
+
+
+
+        
+
+        <div class="review-card">
+
+            <div class="review-top">
+
+                <img src="https://randomuser.me/api/portraits/men/91.jpg"
+                     alt="Michael Carter">
+
+                <div>
+
+                    <h3>Michael Carter</h3>
+
+                    <span>United States</span>
+
+                </div>
+
+            </div>
+
+            <div class="stars">
+
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+
+            </div>
+
+            <p>
+
+                "Excellent customer support and beautiful destinations.
+                I highly recommend Ghumau Nepal to anyone visiting Nepal."
+
+            </p>
+
+            <small>Visited: Annapurna Region</small>
+
+        </div>
+
+    </div>
+
+</section> -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Company Information -->
+
+        <div class="footer-box">
+
+            <h2>
+                <i class="fa-solid fa-mountain"></i>
+                Ghumau Nepal
+            </h2>
+
+            <p>
+                Ghumau Nepal is a tourism management platform designed to
+                help travelers discover Nepal's beautiful destinations,
+                book hotels, arrange transportation, and plan unforgettable
+                trips across all seven provinces.
+            </p>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                <a href="#"><i class="fab fa-youtube"></i></a>
+
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Quick Links -->
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#">Explore Destinations</a></li>
+
+                <li><a href="#">Trip Planner</a></li>
+
+                <li><a href="#">Vehicle Booking</a></li>
+
+                <li><a href="#">Hotel Booking</a></li>
+
+                <li><a href="#">Travel Information</a></li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- Popular Destinations -->
+
+        <div class="footer-box">
+
+            <h3>Top Destinations</h3>
+
+            <ul>
+
+                <li><a href="#">Everest Base Camp</a></li>
+
+                <li><a href="#">Pokhara</a></li>
+
+                <li><a href="#">Chitwan National Park</a></li>
+
+                <li><a href="#">Lumbini</a></li>
+
+                <li><a href="#">Rara Lake</a></li>
+
+                <li><a href="#">Mustang</a></li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- Contact Information -->
+
+        <div class="footer-box">
+
+            <h3>Contact Us</h3>
+
+            <p>
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                Kathmandu, Nepal
+
+            </p>
+
+            <p>
+
+                <i class="fa-solid fa-phone"></i>
+
+                +977 98XXXXXXXX
+
+            </p>
+
+            <p>
+
+                <i class="fa-solid fa-envelope"></i>
+
+                info@ghumaunepal.com
+
+            </p>
+
+            <p>
+
+                <i class="fa-solid fa-clock"></i>
+
+                Sunday - Friday
+
+                <br>
+
+                9:00 AM - 6:00 PM
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <hr>
+
+
+
+    <div class="footer-bottom">
+
+        <p>
+
+            © 2026 Ghumau Nepal. All Rights Reserved.
+
+        </p>
+
+        <div>
+
+            <a href="#">Privacy Policy</a>
+
+            |
+
+            <a href="#">Terms & Conditions</a>
+
+            |
+
+            <a href="#">Support</a>
+
+        </div>
+
+    </div>
+
+</footer>
